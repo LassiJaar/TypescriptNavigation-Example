@@ -7,7 +7,7 @@ export default function HomeScreen() {
       <Text style={styles.text}>HomeScreen</Text>
     </View>
   );
-}
+};
 
 const styles = StyleSheet.create({
   container: {

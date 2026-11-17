@@ -17,8 +17,7 @@ export default function App() {
           initialRouteName="Home"
           screenOptions={{
             header: (props) => <MainAppbar {...props} />,
-          }}
-        >
+          }}>
           <Stack.Screen name="Home" component={HomeScreen} />
           <Stack.Screen name="SecondScreen" component={SecondScreen} />
         </Stack.Navigator>

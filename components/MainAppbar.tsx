@@ -7,16 +7,12 @@ const MainAppbar = ({
   navigation,
   back,
 }: NativeStackHeaderProps) => {
-
   return (
     <Appbar.Header mode="center-aligned" elevated={true}>
       {back ? <Appbar.BackAction onPress={navigation.goBack} /> : null}
       <Appbar.Content title={"Nav Demo"} />
       {!back ? (
-        <Appbar.Action
-          icon="arrow-right"
-          onPress={() => navigation.navigate('SecondScreen')}
-        />
+        <Appbar.Action icon="arrow-right" onPress={() => navigation.navigate('SecondScreen')}/>
       ) : null}
     </Appbar.Header>
   );

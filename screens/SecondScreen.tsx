@@ -1,7 +1,7 @@
 import React from 'react';
 import { Text, View, StyleSheet } from 'react-native';
 
-const SecondScreen = () => {
+export default function SecondScreen() {
   return (
     <View style={styles.container}>
       <Text style={styles.text}>SecondScreen</Text>
@@ -22,5 +22,3 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
   },
 });
-
-export default SecondScreen;
